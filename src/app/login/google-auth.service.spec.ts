@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GoogleAuthServiceService } from './google-auth-service.service';
+import { GoogleAuthService } from './google-auth.service';
 
 describe('GoogleAuthServiceService', () => {
-  let service: GoogleAuthServiceService;
+  let service: GoogleAuthService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(GoogleAuthServiceService);
+    service = TestBed.inject(GoogleAuthService);
   });
 
   it('should be created', () => {

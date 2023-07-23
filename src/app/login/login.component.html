@@ -1,1 +1,25 @@
-<p>login works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Mobile:</label>
+    <input type="mobile" formControlName="mobile">
+    <div *ngIf="form.controls['mobile'].invalid && form.controls['mobile'].touched" class="error">
+      <span class="error">Please enter a valid mobile.</span>
+    </div>
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
+      <span class="error">Please enter a valid email address.</span>
+    </div>
+  </div>
+  <div>
+    <label>Password:</label>
+    <input type="password" formControlName="password">
+    <div *ngIf="form.controls['password'].invalid && form.controls['password'].touched">
+      <span class="error">Please enter a password.</span>
+    </div>
+  </div>
+  <button type="submit" [disabled]="form.invalid">Login</button>
+  <app-googleLogin></app-googleLogin>
+</form>

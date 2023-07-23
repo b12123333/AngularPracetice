@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GoogleAuthService {
-  private readonly clientId = 'YOUR_CLIENT_ID';
+  private readonly clientId = 'YOUR_CLIENT_ID1234123213123';
   private readonly redirectUri = 'YOUR_REDIRECT_URI';
 
   constructor(private http: HttpClient) { }
