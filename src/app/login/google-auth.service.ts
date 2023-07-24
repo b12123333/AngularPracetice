@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GoogleAuthService {
-  private readonly clientId = 'YOUR_CLIENT_ID1234123213123';
-  private readonly redirectUri = 'YOUR_REDIRECT_URI';
+  private readonly clientId = '537821863898-scj2n8pkm88udb8e40rddsr7b74k941d.apps.googleusercontent.com';
+  private readonly redirectUri = 'http://localhost:4200/functionPage';
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +22,7 @@ export class GoogleAuthService {
     if (accessToken) {
       // You can store the access token and use it to access Google APIs
       // or make requests to your backend to authenticate the user.
+      console.log(accessToken);
     }
   }
 }

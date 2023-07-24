@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import {GoogleAuthButton} from "./login/googleAuthButton";
+import { FunctionPageComponent } from './functionPage/function-page/function-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    GoogleAuthButton
+    GoogleAuthButton,
+    FunctionPageComponent
   ],
   imports: [
     BrowserModule,
